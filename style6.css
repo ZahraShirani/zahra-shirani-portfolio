@@ -38,6 +38,26 @@ p{
 
 footer {
   background-color: #f4c2a1;
+  .site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .profile-photo {
+    width: 80px;
+    height: 80px;
+  }
+}
   text-align: center;
   padding: 15px;
   margin-top: 40px;
